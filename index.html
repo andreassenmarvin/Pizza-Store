@@ -39,7 +39,7 @@
                 Visit our <a href="#">Facebook</a> and <a href="#">Instagram</a> accounts to find out where our Pizza delicious foodtruck, is located.</p>
                 <p id="order-now">Now this is some regale that you idolize</p>
         </div>
-        <button type="submit" class="btn btn-default" id="order-btn">Order</button>
+       <a href="#menu" id="order-link"><button type="submit" class="btn btn-default" id="order-btn">Order</button></a>
         <section class="about-section">
             <div id="aboutus">
                 <h3 id="about-h">About us</h3>
@@ -51,6 +51,7 @@
               <div class="container carousel slide" data-ride="carousel">
                   <div class="carousel-overlay">
                   </div>
+                  <p id="carousel-tag">The most savoury pizzas you'll ever taste</p>
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-1" data-slide-to="0" class="indicators" id="click1"  onclick="currentSlide(1)"></li>
                     <li data-target="#carousel-2" data-slide-to="1" class="indicators" id="click2"  onclick="currentSlide(2)"></li>
@@ -80,9 +81,10 @@
               <img src="Assets/pizza1.png" alt="pizza" id="img-pizza">
         </section>
 
-        <section class="menu">
+        <section class="menu" id="menu">
             <div id="menu-overlay"></div>
             <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid" id="menu-bg">
+            <div class="order-pizza"></div>
         </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>

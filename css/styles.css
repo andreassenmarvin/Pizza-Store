@@ -153,6 +153,10 @@ i {
     width: 500px;
 }
 
+#order-link{
+    text-decoration: none;
+}
+
 #order-btn {
     border: 1px solid transparent;
     border-radius: 0;
@@ -210,7 +214,20 @@ i {
 }
 
 .carousel{
+    position: relative;
     margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carousel-tag{
+    width: 50%;
+    position: absolute;
+    font-size: 45px;
+    letter-spacing: 0.06em;
+    z-index: 1;
+    color: white;
 }
 
 .carousel-item{
@@ -256,7 +273,6 @@ i {
     position: absolute;
     display: block;
     margin: auto;
-    margin-left: 55px;
     width: 87.5%;
     height: 500px;
     background: rgba(17,17,17,0.6);
