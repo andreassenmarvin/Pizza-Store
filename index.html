@@ -51,8 +51,25 @@
 
               <img src="Assets/pizza1.png" alt="pizza" id="img-pizza">
 
-              <div class="img-carousel container">
+              <div class="container carousel slide" data-ride="carousel">
+                  <div class="carousel-overlay">
+                  </div>
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-1" data-slide-to="0" class="active" id="click1"></li>
+                    <li data-target="#carousel-2" data-slide-to="1" id="click2"></li>
+                    <li data-target="#carousel-3" data-slide-to="2" id="click3"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                  <div class="carousel-item active" id="carousel-item1">
                   <img src="Assets/carousel1.jpg" alt="pizza restaurant" id="carousel-1">
+                  </div>
+                  <div class="carousel-item" id="carousel-item2">
+                  <img src="Assets/carousel2.jpg" alt="pizza restaurant" id="carousel-2">
+                  </div>
+                  <div class="carousel-item" id="carousel-item3">
+                  <img src="Assets/carousel3.jpg" alt="pizza restaurant"  id="carousel-3">
+                  </div>
+                  </div>
               </div>
         </section>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
