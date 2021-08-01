@@ -1208,3 +1208,11 @@ i {
     font-size: 20px;
     top: 210px;
 }
+
+.map iframe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 29.5%;
+    height: 260px;
+}
