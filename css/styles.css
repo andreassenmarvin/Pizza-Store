@@ -19,7 +19,7 @@ body {
     object-fit: cover;
     object-position: center;
     width: 100%;
-    height: auto;
+    height: aut0;
     max-width: 100%;
     opacity: 0.8;
     z-index: -999;
@@ -184,7 +184,7 @@ i {
     flex-direction: column;
     justify-content: space-between;
     width: 100%;
-    height: 900px;
+    height: 1000px;
     margin-top: 80px;
     background-color: white;
 }
@@ -299,7 +299,7 @@ i {
 }
 
 .carousel-control-prev {
-    background-color: red;
+    background-color: #e12301;
     width: 30px;
     height: 35px;
     margin: auto;
@@ -313,7 +313,7 @@ i {
 }
 
 .carousel-control-next {
-    background-color: red;
+    background-color: #e12301;
     width: 30px;
     height: 35px;
     margin: auto;
@@ -329,15 +329,31 @@ i {
 #menu-bg {
     position: relative;
     width: 100%;
-    height: 1300px;
+    height: 1450px;
     object-fit: cover;
     object-position: center;
+}
+
+.menu-cart-bg{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.menu-cart-overlay{
+    position: absolute;
+    width: 100%;
+    height: 2000px;
+    background: rgba(17, 17, 17, 0.6);
+    z-index: 1;
 }
 
 #menu-overlay {
     position: absolute;
     width: 100%;
-    height: 1300px;
+    height: 1400px;
     background: rgba(17, 17, 17, 0.6);
     z-index: 1;
 }
@@ -748,11 +764,21 @@ i {
     z-index: 1;
 }
 
+#menu-line2{
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 790px;
+    margin-left: 23px;
+}
+
 .toppings{
     position: absolute;
     display: flex;
     z-index: 1;
-    margin-top: 890px;
+    margin-top: 870px;
 }
 
 #toppings-head{
@@ -950,4 +976,175 @@ i {
     color: white;
     font-size: 25px;
     z-index: 1;
+}
+
+#menu-line3{
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 1210px;
+    margin-left: 23px;
+}
+
+.checkout{
+    position: absolute;
+    display: flex;
+    margin-top: 1250px;
+    margin-left: 200px;
+    z-index: 1;
+}
+
+#checkout-btn{
+    position: absolute;
+    width: 180px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 0;
+    font-size: 26px;
+    transition: all ease-in-out .4s;
+    outline: none
+}
+
+#checkout-btn:hover{
+    background-color: #e12301;
+    border: 1px solid transparent
+}
+
+.cart{
+    display: none;
+    position: absolute;
+    margin-left: 350px;
+    width: 450px;
+    height: 720px;
+    border:1px solid white;   
+    background: white;
+}
+
+#cart-head{
+    font-size: 35px;
+    color: black;
+    text-align: center;
+    margin-top: 10px;
+}
+
+#your-order{
+    color: black;
+    margin: 20px;
+}
+
+#order-size{
+    font-size: 25px;
+    padding: 20px;
+}
+
+#order-crust{
+    font-size: 25px;
+    padding: 20px;
+}
+
+#order-toppings{
+    font-size: 25px;
+    padding: 20px;
+}
+
+.cart-btns{
+    margin-left: 20px;
+}
+
+#confirm-order{
+    width: 110px;
+    height: 40px;
+    font-size: 20px;
+    margin: 20px;
+    background: white;
+    border: 1px solid black;
+    color: black;
+    transition: all ease-in-out .4s;
+}
+
+#confirm-order:hover{
+    background: black;
+    color: white;
+    border: 1px solid transparent;
+}
+
+#cancel-order{
+    width: 110px;
+    height: 40px;
+    font-size: 20px;
+    background: #e12301;
+    color: white;
+    border: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+#cancel-order:hover{
+    background: transparent;
+    border: 1px solid black;
+    color: black;
+}
+
+.delivery{
+    margin: 20px 0px 0px 40px;
+    font-size: 25px;
+}
+
+.deliver-inputs{
+    margin-left: 40px;
+}
+
+.deliver-inputs input[type = "radio"]{
+    cursor: pointer;
+}
+
+.deliver-inputs label{
+    font-size: 22px;
+}
+
+.total-cost{
+    margin: 5px 0px 0px 40px;
+    font-size: 25px;
+}
+
+#submit-order{
+    width: 110px;
+    height: 40px;
+    font-size: 20px;
+    background: black;
+    display: block;
+    margin: auto;
+    margin-top: 30px;
+    color: white;
+    border: 1px solid transparent;
+    transition: all ease-in-out .4s;
+}
+
+#submit-order:hover{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    background: white;
+    color: black;
+}
+
+.footer-info{
+    position: absolute;
+    margin: 20px;
+}
+
+#footer-copy{
+    position: absolute;
+    text-align: center;
+    width: 350px;
+    margin-top: 30px;
 }

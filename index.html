@@ -50,7 +50,7 @@
             delicious foodtruck, is located.</p>
         <p id="order-now">Now this is some regale that you idolize</p>
     </div>
-    <a href="#menu" id="order-link"><button type="submit" class="btn btn-default" id="order-btn">Order</button></a>
+    <a href="#menu" id="order-link"><button type="button" class="btn-default" id="order-btn">Order</button></a>
     <section class="about-section">
         <div id="aboutus">
             <h3 id="about-h">About us</h3>
@@ -66,7 +66,7 @@
             <div class="container carousel slide" data-ride="carousel">
                 <div class="carousel-overlay">
                 </div>
-                <p id="carousel-tag">The most savoury pizzas you'll ever taste</p>
+                <p id="carousel-tag">The most savoury pizzas you'll ever encounter</p>
                 <ol class="carousel-indicators">
                     <li data-target="#carousel-1" data-slide-to="0" class="indicators" id="click1"
                         onclick="currentSlide(1)"></li>
@@ -100,12 +100,12 @@
     </section>
 
     <section class="menu" id="menu">
-        <div id="menu-overlay"></div>
+        <div id="menu-overlay" class="menu-overlay"></div>
         <h3 id="menu-title">Choose your preferred size</h3>
         <div class="order-pizza">
             <div class="pizza-size">
                 <div class="small-pizza">
-                    <input type="checkbox" id="small-check">
+                    <input type="checkbox" value="650" id="small-check">
                     <label for="small-pizza" id="small-label"><img src="Assets/small-pizza.jpg" alt="small pizza"
                             id="smallpizza"></label>
                 </div>
@@ -114,7 +114,7 @@
             <p id="small-price">ksh650</p>
         </div>
         <div class="medium-pizza">
-            <input type="checkbox" id="medium-check">
+            <input type="checkbox" value="850" id="medium-check">
             <label for="medium-pizza" id="medium-label"><img src="Assets/medium-pizza.jpg" alt="medium pizza"
                     id="medium-pizza"></label>
         </div>
@@ -124,7 +124,7 @@
             <p id="medium-price">ksh850</p>
         </div>
         <div class="large-pizza">
-            <input type="checkbox" id="large-check">
+            <input type="checkbox" value="1250" id="large-check">
             <label for="large-pizza" id="large-label"><img src="Assets/large-pizza.jpg" alt="large pizza"
                     id="large-pizza"></label>
         </div>
@@ -138,7 +138,7 @@
             <h3 id="crusts-head">Select your preferred type of crust</h3>
             <div class="stuffed-crust">
                 <div id="stuffed-crust">
-                    <input type="checkbox" id="stuffed-input">
+                    <input type="checkbox" value="150" id="stuffed-input">
                         <img src="Assets/stuffed-crust.jpg" alt="stuffed crust" id="stuffed-img">
                         <div id="stuffed-t-price">
                         <h3 id="stuffed-tag">Stuffed crust</h3>
@@ -148,7 +148,7 @@
             </div>
             <div class="glutten-crust">
                 <div id="glutten-crust">
-                    <input type="checkbox" id="glutten-input">
+                    <input type="checkbox" value="200" id="glutten-input">
                         <img src="Assets/glutenfreepizzacrust.jpg" alt="Glutten-free crust" id="glutten-img">
                         <div id="glutten-t-price">
                         <h3 id="glutten-tag">Glutten-free crust</h3>
@@ -158,7 +158,7 @@
             </div>
             <div class="crispy-crust">
                 <div id="crispy-crust">
-                    <input type="checkbox" id="crispy-input">
+                    <input type="checkbox" value="250" id="crispy-input">
                         <img src="Assets/crispy-crust.webp" alt="Crispy crust" id="crispy-img">
                         <div id="crispy-t-price">
                         <h3 id="crispy-tag">Crispy crust</h3>
@@ -167,41 +167,81 @@
                 </div>
             </div>
         </div>
+        <div id="menu-line2"></div>
         <div class="toppings">
             <h3 id="toppings-head">Select your preferred topping</h3>
             <div class="pepperoni">
                 <div id="pepperoni">
-                    <input type="checkbox" id="pepperoni-input">
+                    <input type="checkbox" value="150" id="pepperoni-input">
                         <img src="Assets/pepperoni.jpeg" alt="pepperoni topping" id="pepperoni-img">
                         <div id="pepperoni-t-price">
                         <h3 id="pepperoni-tag">Pepperoni topping</h3>
-                        <p id="pepperoni-price">Ksh 50</p>
+                        <p id="pepperoni-price">Ksh 150</p>
                     </div>
                 </div>
             </div>
             <div class="mushroom">
                 <div id="mushroom">
-                    <input type="checkbox" id="mushroom-input">
+                    <input type="checkbox" value="100" id="mushroom-input">
                         <img src="Assets/mushroom.jpg" alt="Mushroom topping" id="mushroom-img">
                         <div id="mushroom-t-price">
                         <h3 id="mushroom-tag">mushroom topping</h3>
-                        <p id="mushroom-price">Ksh 50</p>
+                        <p id="mushroom-price">Ksh 100</p>
                     </div>
                 </div>
             </div>
             <div class="bacon">
                 <div id="bacon">
-                    <input type="checkbox" id="bacon-input">
+                    <input type="checkbox" value="200" id="bacon-input">
                         <img src="Assets/bacon.jpg" alt="Bacon topping" id="bacon-img">
                         <div id="bacon-t-price">
                         <h3 id="bacon-tag">bacon topping</h3>
-                        <p id="bacon-price">Ksh 50</p>
+                        <p id="bacon-price">Ksh 200</p>
                     </div>
                 </div>
             </div>
         </div>
-        <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid" id="menu-bg">
+        <div id="menu-line3"></div>
+        <div class="checkout">
+            <a href="#cart-checkout"><button type="button" class="btn-default" id="checkout-btn">Proceed to checkout</button></a>
+            <div class="cart" id="cart-checkout">
+                <h3 id="cart-head">Checkout here</h3>
+                <div id="your-order">
+                    <h4 id="order-size">You have ordered a:</h4>
+                    <h4 id="order-crust">With:</h4>
+                    <h4 id="order-toppings">and:</h4>
+                </div>
+                <div class="cart-btns">
+                <button type="button" id="confirm-order">Confirm</button>
+                <button type="button" id="cancel-order">Cancel</button>
+                </div>
+                <div class="delivery">
+                    <p>Would you like us to deliver your order at an additional fee of Ksh250?</p>
+                </div>
+                <div class="deliver-inputs">
+                    <div id="yes-radio">
+                    <input type="radio" name="deliver" value="yes" id="yes">
+                    <label for="Yes">Yes</label>
+                    </div>
+                    <div id="no-radio">
+                    <input type="radio" name="deliver" value="no" id="no">
+                    <label for="No">No</label>
+                    </div>
+                </div>
+                <div class="total-cost">
+                    <p id="total-cost">Your total cost is:</p>
+                </div>
+                <input type="submit" value="Proceed" id="submit-order">
+            </div>
+        </div>
+        <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid menu-bg" id="menu-bg">
     </section>
+    <footer class="footer">
+        <div class="footer-info">
+            <h4>Business Hours</h4>
+        </div>
+       <p id="footer-copy">&copy Copyright 2021,All right reserved Marvin Macharia</p>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
 </body>

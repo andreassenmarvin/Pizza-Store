@@ -15,6 +15,15 @@ $(function () {
             $(".navbar-brand").addClass("brand-auto");
         }
     })
+    var checkoutBtn = document.getElementById("checkout-btn");
+    $(checkoutBtn).click(function(){
+        $(".cart").fadeIn();
+        $(".menu-bg").removeAttr("id");
+        $(".menu-bg").addClass("menu-cart-bg");
+        $(".menu-overlay").removeAttr("id");
+        $(".menu-overlay").addClass("menu-cart-overlay");
+        $(checkoutBtn).fadeOut();
+    })
 })
 
 // Slideshow images
@@ -50,3 +59,4 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
     indicators[slideIndex - 1].className += " active";
 }
+
