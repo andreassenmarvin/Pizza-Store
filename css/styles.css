@@ -70,19 +70,22 @@ body {
 }
 
 i {
-    padding: 30px;
+    margin: 30px;
 }
 
 #facebook {
     color: blue;
+    cursor: pointer;
 }
 
 #instagram {
     color: #833AB4;
+    cursor: pointer;
 }
 
 #whatsapp {
     color: green;
+    cursor: pointer;
 }
 
 #navbar {
@@ -1131,6 +1134,8 @@ i {
 
 .footer{
     position: relative;
+    display: flex;
+    justify-content: center;
     width: 100%;
     height: 270px;
     background: white;
@@ -1171,6 +1176,7 @@ i {
 
 #footer-call h4{
     font-size: 35px;
+    text-align: center;
 }
 
 #footer-call a{
@@ -1178,10 +1184,28 @@ i {
     color: black;
 }
 
+#footer-contact{
+    margin-left: 80px;
+    padding-right: 80px;
+    border-right: 1px solid black;   
+}
+
+#footer-contact h4{
+    font-size: 35px;
+    text-align: center;
+}
+
+#footer-contact a{
+    font-size: 25px;
+    color: black;
+}
+
+i{
+    cursor: pointer;
+}
 
 #footer-follow{
     margin-left: 50px;
-    border-right: 1px solid black;
     padding-right: 30px;
     text-align: center;
 }
@@ -1206,7 +1230,7 @@ i {
     text-align: center;
     width: 280px;
     font-size: 20px;
-    top: 210px;
+    top: 100px;
 }
 
 .map iframe{
