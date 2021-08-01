@@ -752,5 +752,202 @@ i {
     position: absolute;
     display: flex;
     z-index: 1;
-    margin-top: 800px;
+    margin-top: 890px;
+}
+
+#toppings-head{
+    position: absolute;
+    width: 400px;
+    color: white;
+    font-size: 32px;
+    z-index: 1;
+    margin-top: -55px;
+    margin-left: 600px;
+    text-transform: capitalize;
+}
+
+.pepperoni{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 140px;
+}
+
+#pepperoni{
+    position: absolute;
+}
+
+#pepperoni-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#pepperoni-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#pepperoni-img:hover{
+    transform: scale(1.1);
+}
+
+#pepperoni-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#pepperoni-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#pepperoni-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.mushroom{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#mushroom{
+    position: absolute;
+}
+
+#mushroom-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#mushroom-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#mushroom-img:hover{
+    transform: scale(1.1);
+}
+
+#mushroom-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#mushroom-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#mushroom-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.bacon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#bacon{
+    position: absolute;
+}
+
+#bacon-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#bacon-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#bacon-img:hover{
+    transform: scale(1.1);
+}
+
+#bacon-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#bacon-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#bacon-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
 }
