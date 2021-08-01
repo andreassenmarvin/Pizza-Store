@@ -329,7 +329,7 @@ i {
 #menu-bg {
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 1300px;
     object-fit: cover;
     object-position: center;
 }
@@ -337,7 +337,7 @@ i {
 #menu-overlay {
     position: absolute;
     width: 100%;
-    height: 900px;
+    height: 1300px;
     background: rgba(17, 17, 17, 0.6);
     z-index: 1;
 }
@@ -353,7 +353,7 @@ i {
 
 .order-pizza {
     position: absolute;
-    z-index: 2;
+    z-index: 1;
     margin-left: 80px;
 }
 
@@ -389,7 +389,7 @@ i {
     margin-top: 14px;
     margin-left: 4px;
     transform: scale(1.8);
-    z-index: 3;
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -440,7 +440,7 @@ i {
     margin-top: 25px;
     margin-left: 29px;
     transform: scale(1.8);
-    z-index: 3;
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -456,7 +456,7 @@ i {
     width: 300px;
     color: white;
     font-size: 35px;
-    z-index: 3;
+    z-index: 1;
     text-transform: capitalize;
 }
 
@@ -465,7 +465,7 @@ i {
     color: white;
     font-size: 25px;
     text-align: center;
-    z-index: 3;
+    z-index: 1;
     margin: 20px;
     margin-top: 48px;
 }
@@ -519,7 +519,7 @@ i {
     margin-left: -18px;
     color: white;
     font-size: 35px;
-    z-index: 3;
+    z-index: 1;
     text-transform: capitalize;
 }
 
@@ -529,7 +529,228 @@ i {
     color: white;
     font-size: 25px;
     text-align: center;
-    z-index: 3;
+    z-index: 1;
     margin: 20px;
     margin-top: 48px;
+}
+
+#menu-line1{
+    position: absolute;
+    width: 97%;
+    height: 1px;
+    background-color: white;
+    z-index: 1;
+    margin-top: 382px;
+    margin-left: 23px;
+}
+
+.crusts{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: 450px;
+}
+
+#crusts-head{
+    position: absolute;
+    width: 400px;
+    color: white;
+    font-size: 32px;
+    z-index: 1;
+    margin-top: -50px;
+    margin-left: 565px;
+    text-transform: capitalize;
+}
+
+.stuffed-crust{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 140px;
+}
+
+#stuffed-crust{
+    position: absolute;
+}
+
+#stuffed-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 7px;
+    margin-left: 7px;
+}
+
+#stuffed-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#stuffed-img:hover{
+    transform: scale(1.1);
+}
+
+#stuffed-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#stuffed-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#stuffed-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.glutten-crust{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#glutten-crust{
+    position: absolute;
+}
+
+#glutten-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#glutten-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#glutten-img:hover{
+    transform: scale(1.1);
+}
+
+#glutten-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#glutten-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#glutten-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.crispy-crust{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 210px;
+    padding: auto;
+    background: transparent;
+    border: 2px solid white;
+    box-shadow: 2px 2px 7px;
+    z-index: 1;
+    margin-left: 165px;
+}
+
+#crispy-crust{
+    position: absolute;
+}
+
+#crispy-input{
+    position: absolute;
+    transform: scale(1.8);
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#crispy-img{
+    width: 235px;
+    height: 170px;
+    transition: all ease-in-out .4s;
+}
+
+#crispy-img:hover{
+    transform: scale(1.1);
+}
+
+#crispy-t-price{
+    position: absolute;
+    color: white;
+    text-align: center;
+    margin-left: -30px;
+    z-index: 1;
+    
+}
+
+#crispy-tag{
+    width: 300px;
+    color: white;
+    font-size: 35px;
+    margin-top: 30px;
+    z-index: 1;
+    text-transform: capitalize;
+}
+
+#crispy-price{
+    color: white;
+    font-size: 25px;
+    z-index: 1;
+}
+
+.toppings{
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    margin-top: 800px;
 }
