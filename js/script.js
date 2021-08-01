@@ -62,6 +62,22 @@ $(function () {
         }
     })
 
+    $("#menu-bar").click(function(){
+        $(".nav-menu").fadeIn();
+        $("#menu-bar").fadeOut();
+        $("#menu-hide").fadeIn();
+        $(".navbar-brand").removeClass("brand-auto");
+        $(".navbar-brand").addClass("brand-menu");
+    })
+
+    $("#menu-hide").click(function(){
+        $(".nav-menu").fadeOut();
+        $("#menu-bar").fadeIn();
+        $("#menu-hide").fadeOut();
+        $(".navbar-brand").removeClass("brand-menu");
+        $(".navbar-brand").addClass("brand-auto");
+    })
+
     // proceed to checkout
     $("#checkout-btn").click(function (event) {
         var mySize = $("#pizzaSizes input:checked").val();
@@ -103,9 +119,8 @@ $(function () {
                 crust_price = 200;
                 break;
             default:
-                console.log("No price");
         }
-        var topping_value = myTopping.length * 50;
+        var topping_value = parseInt(myTopping.length * 50);
 
         if ((mySize == null) || (myCrust == null)) {
             $("#select-error").show();
@@ -119,15 +134,15 @@ $(function () {
             $("#select-error").hide();
         }
 
-        total = price + crust_price + topping_value;
+        total = parseInt(price + crust_price + topping_value);
         var checkoutTotal = 0;
-        checkoutTotal = checkoutTotal + total;
+        checkoutTotal = parseInt(checkoutTotal + total);
 
         $("#order-size").append(mySize);
         $("#order-crust").append(myCrust);
         $("#order-toppings").append(myTopping).val();
 
-       
+
         // Proceed button
         $("#submit-order").click(function () {
             $("#total-cost").append(checkoutTotal);
@@ -138,14 +153,6 @@ $(function () {
             var deliveryAmount = checkoutTotal + 250;
             $("#total-cost").append(deliveryAmount);
         });
-
-        // when one clicks place order button
-        $("button#final-order").click(function (event) {
-            event.preventDefault();
-            let deliveryAmount = checkoutTotal + 250;
-            console.log("Final Bill is: " + deliveryAmount);
-        });
         event.preventDefault();
     });
 })
-
