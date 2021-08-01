@@ -102,31 +102,33 @@
     <section class="menu" id="menu">
         <div id="menu-overlay" class="menu-overlay"></div>
         <h3 id="menu-title">Choose your preferred size</h3>
-        <div class="order-pizza">
-            <div class="pizza-size">
-                <div class="small-pizza">
-                    <input type="checkbox" value="650" id="small-check">
-                    <label for="small-pizza" id="small-label"><img src="Assets/small-pizza.jpg" alt="small pizza"
-                            id="smallpizza"></label>
+        <div id="pizzaSizes">
+            <div class="order-pizza">
+                <div class="pizza-size">
+                    <div class="small-pizza">
+                        <input type="radio" name="pizzasize" value="Small sized pizza(650/=)" id="small-check">
+                        <label for="small-pizza" id="small-label"><img src="Assets/small-pizza.jpg" alt="small pizza"
+                                id="smallpizza"></label>
+                    </div>
                 </div>
+                <h3 id="small-p-tag">Small Pizza</h3>
+                <p id="small-price">ksh650</p>
             </div>
-            <h3 id="small-p-tag">Small Pizza</h3>
-            <p id="small-price">ksh650</p>
+            <div class="medium-pizza">
+                <input type="radio" name="pizzasize" value="Medium sized pizza(850/=)" id="medium-check">
+                <label for="medium-pizza" id="medium-label"><img src="Assets/medium-pizza.jpg" alt="medium pizza"
+                        id="medium-pizza"></label>
+            </div>
+            <div class="medium-p-t">
+                <h3 id="medium-p-tag">medium Pizza</h3>
+                <p id="medium-price">ksh850</p>
+            </div>
+            <div class="large-pizza">
+                <input type="radio" name="pizzasize" value="Large sized pizza(1250/=)" id="large-check">
+                <label for="large-pizza" id="large-label"><img src="Assets/large-pizza.jpg" alt="large pizza"
+                        id="large-pizza"></label>
+            </div>
         </div>
-        <div class="medium-pizza">
-            <input type="checkbox" value="850" id="medium-check">
-            <label for="medium-pizza" id="medium-label"><img src="Assets/medium-pizza.jpg" alt="medium pizza"
-                    id="medium-pizza"></label>
-        </div>
-        </div>
-        <div class="medium-p-t">
-            <h3 id="medium-p-tag">medium Pizza</h3>
-            <p id="medium-price">ksh850</p>
-        </div>
-        <div class="large-pizza">
-            <input type="checkbox" value="1250" id="large-check">
-            <label for="large-pizza" id="large-label"><img src="Assets/large-pizza.jpg" alt="large pizza"
-                    id="large-pizza"></label>
         </div>
         <div class="large-p-t">
             <h3 id="large-p-tag">large Pizza</h3>
@@ -138,9 +140,9 @@
             <h3 id="crusts-head">Select your preferred type of crust</h3>
             <div class="stuffed-crust">
                 <div id="stuffed-crust">
-                    <input type="checkbox" value="150" id="stuffed-input">
-                        <img src="Assets/stuffed-crust.jpg" alt="stuffed crust" id="stuffed-img">
-                        <div id="stuffed-t-price">
+                    <input type="radio" name="crusts" value="Stuffed Crust(150/=)" id="stuffed-input">
+                    <img src="Assets/stuffed-crust.jpg" alt="stuffed crust" id="stuffed-img">
+                    <div id="stuffed-t-price">
                         <h3 id="stuffed-tag">Stuffed crust</h3>
                         <p id="stuffed-price">Ksh 150</p>
                     </div>
@@ -148,9 +150,9 @@
             </div>
             <div class="glutten-crust">
                 <div id="glutten-crust">
-                    <input type="checkbox" value="200" id="glutten-input">
-                        <img src="Assets/glutenfreepizzacrust.jpg" alt="Glutten-free crust" id="glutten-img">
-                        <div id="glutten-t-price">
+                    <input type="radio" name="crusts" value="Glutten Crust(200/=)" id="glutten-input">
+                    <img src="Assets/glutenfreepizzacrust.jpg" alt="Glutten-free crust" id="glutten-img">
+                    <div id="glutten-t-price">
                         <h3 id="glutten-tag">Glutten-free crust</h3>
                         <p id="glutten-price">Ksh 200</p>
                     </div>
@@ -158,9 +160,9 @@
             </div>
             <div class="crispy-crust">
                 <div id="crispy-crust">
-                    <input type="checkbox" value="250" id="crispy-input">
-                        <img src="Assets/crispy-crust.webp" alt="Crispy crust" id="crispy-img">
-                        <div id="crispy-t-price">
+                    <input type="radio" name="crusts" value="Crispy Crust(250/=)" id="crispy-input">
+                    <img src="Assets/crispy-crust.webp" alt="Crispy crust" id="crispy-img">
+                    <div id="crispy-t-price">
                         <h3 id="crispy-tag">Crispy crust</h3>
                         <p id="crispy-price">Ksh 250</p>
                     </div>
@@ -172,38 +174,40 @@
             <h3 id="toppings-head">Select your preferred topping</h3>
             <div class="pepperoni">
                 <div id="pepperoni">
-                    <input type="checkbox" value="150" id="pepperoni-input">
-                        <img src="Assets/pepperoni.jpeg" alt="pepperoni topping" id="pepperoni-img">
-                        <div id="pepperoni-t-price">
+                    <input type="checkbox" name="toppings" value="Pepperoni topping(50/=)" id="pepperoni-input">
+                    <img src="Assets/pepperoni.jpeg" alt="pepperoni topping" id="pepperoni-img">
+                    <div id="pepperoni-t-price">
                         <h3 id="pepperoni-tag">Pepperoni topping</h3>
-                        <p id="pepperoni-price">Ksh 150</p>
+                        <p id="pepperoni-price">Ksh 50</p>
                     </div>
                 </div>
             </div>
             <div class="mushroom">
                 <div id="mushroom">
-                    <input type="checkbox" value="100" id="mushroom-input">
-                        <img src="Assets/mushroom.jpg" alt="Mushroom topping" id="mushroom-img">
-                        <div id="mushroom-t-price">
+                    <input type="checkbox" name="toppings" value="Mushroom topping(50/=)" id="mushroom-input">
+                    <img src="Assets/mushroom.jpg" alt="Mushroom topping" id="mushroom-img">
+                    <div id="mushroom-t-price">
                         <h3 id="mushroom-tag">mushroom topping</h3>
-                        <p id="mushroom-price">Ksh 100</p>
+                        <p id="mushroom-price">Ksh 50</p>
                     </div>
                 </div>
             </div>
             <div class="bacon">
                 <div id="bacon">
-                    <input type="checkbox" value="200" id="bacon-input">
-                        <img src="Assets/bacon.jpg" alt="Bacon topping" id="bacon-img">
-                        <div id="bacon-t-price">
+                    <input type="checkbox" name="toppings" value="Bacon topping(50/=)" id="bacon-input">
+                    <img src="Assets/bacon.jpg" alt="Bacon topping" id="bacon-img">
+                    <div id="bacon-t-price">
                         <h3 id="bacon-tag">bacon topping</h3>
-                        <p id="bacon-price">Ksh 200</p>
+                        <p id="bacon-price">Ksh 50</p>
                     </div>
                 </div>
             </div>
         </div>
         <div id="menu-line3"></div>
         <div class="checkout">
-            <a href="#cart-checkout"><button type="button" class="btn-default" id="checkout-btn">Proceed to checkout</button></a>
+            <a href="#cart-checkout"><button type="button" class="btn-default" id="checkout-btn">Proceed to
+                    checkout</button></a>
+            <p id="select-error">Kindly select your desired pizza and crust</p>
             <div class="cart" id="cart-checkout">
                 <h3 id="cart-head">Checkout here</h3>
                 <div id="your-order">
@@ -212,20 +216,20 @@
                     <h4 id="order-toppings">and:</h4>
                 </div>
                 <div class="cart-btns">
-                <button type="button" id="confirm-order">Confirm</button>
-                <button type="button" id="cancel-order">Cancel</button>
+                    <button type="button" id="confirm-order">Confirm</button>
+                    <button type="button" id="cancel-order">Cancel</button>
                 </div>
                 <div class="delivery">
                     <p>Would you like us to deliver your order at an additional fee of Ksh250?</p>
                 </div>
                 <div class="deliver-inputs">
                     <div id="yes-radio">
-                    <input type="radio" name="deliver" value="yes" id="yes">
-                    <label for="Yes">Yes</label>
+                        <input type="radio" name="deliver" value="yes" id="yes">
+                        <label for="Yes">Yes</label>
                     </div>
                     <div id="no-radio">
-                    <input type="radio" name="deliver" value="no" id="no">
-                    <label for="No">No</label>
+                        <input type="radio" name="deliver" value="no" id="no">
+                        <label for="No">No</label>
                     </div>
                 </div>
                 <div class="total-cost">
@@ -239,36 +243,34 @@
     <footer class="footer">
         <div class="footer-info">
             <div class="footer-hrs">
-            <h4 id="business-hrs">Business Hours</h4>
-            <ul class="footer-list">
-                <li>Monday-Friday:8am-9pm</li>
-                <li>Saturday:10am-8pm</li>
-                <li>Sunday:12pm-8pm</li>
-            </ul>
+                <h4 id="business-hrs">Business Hours</h4>
+                <ul class="footer-list">
+                    <li>Monday-Friday:8am-9pm</li>
+                    <li>Saturday:10am-8pm</li>
+                    <li>Sunday:12pm-8pm</li>
+                </ul>
             </div>
             <div id="footer-call">
-            <h4>Call us</h4>
-            <a href="tel:+254759082650">0759082650</a>
+                <h4>Call us</h4>
+                <a href="tel:+254759082650">0759082650</a>
             </div>
             <div id="footer-contact">
                 <h4>Contact us</h4>
                 <a href="mailto:andreassenmarvin@gmail.com">andreassenmarvin@gmail.com</a>
-                </div>
+            </div>
             <div id="footer-follow">
                 <h4>Follow us</h4>
                 <div class="footer-icons">
-                <i class="bi bi-facebook"></i>
-                <i class="bi bi-instagram"></i>
-                <i class="bi bi-twitter"></i>
+                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-twitter"></i>
                 </div>
-                </div>
+            </div>
         </div>
-
-       
-       <p id="footer-copy">&copy Copyright 2021,All right reserved Marvin Macharia.</p>
+        <p id="footer-copy">&copy Copyright 2021,All right reserved Marvin Macharia.</p>
     </footer>
 
-    
+
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="js/script.js"></script>
 </body>
