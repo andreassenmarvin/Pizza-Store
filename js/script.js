@@ -161,6 +161,7 @@ $(function () {
 
         // home delivery button
         $("#yes").click(function () {
+            prompt("Enter your location");
             var deliveryAmount = checkoutTotal + 250;
             $("#total-cost").append(deliveryAmount);
         });
