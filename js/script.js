@@ -62,7 +62,7 @@ $(function () {
         }
     })
 
-    $("#menu-bar").click(function(){
+    $("#menu-bar").click(function () {
         $(".nav-menu").fadeIn();
         $("#menu-bar").fadeOut();
         $("#menu-hide").fadeIn();
@@ -71,7 +71,7 @@ $(function () {
         $(".body-overlay").fadeIn();
     })
 
-    $("#menu-hide").click(function(){
+    $("#menu-hide").click(function () {
         $(".nav-menu").fadeOut();
         $("#menu-bar").fadeIn();
         $("#menu-hide").fadeOut();
@@ -80,7 +80,7 @@ $(function () {
         $(".body-overlay").fadeOut();
     })
 
-    $("#nav-menu-links li").click(function(){
+    $("#nav-menu-links li").click(function () {
         $(".nav-menu").fadeOut();
         $("#menu-bar").fadeIn();
         $("#menu-hide").fadeOut();
