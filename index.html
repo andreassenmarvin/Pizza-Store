@@ -12,13 +12,20 @@
     <link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 
-<body>
+<body class="body">
+    <div class="body-overlay"></div>
     <div class="nav-menu">
+        <div class="nav-brand">
+            <img src="https://img.icons8.com/ios/452/d.png" alt="logo" class="navbar-brand brand-auto" id="navbar-D">
+            <img src="https://cdn.iconscout.com/icon/premium/png-512-thumb/r-23-833322.png" alt="logo"
+                class="navbar-brand" id="navbar-R">
+        </div>
         <ul id="nav-menu-links">
+            <i class="bi bi-x-lg" id="menu-hide"></i>
             <a href="index.html"><li id="home">Home</li></a>
             <a href="#aboutus"><li id="about">About</li></a>
-            <a href=""><li id="our-menu">Our Services</li></a>
-            <a href=""><li id="contact-us">Contact Us</li></a>
+            <a href="#menu"><li id="our-menu">Our Services</li></a>
+            <a href="#footer"><li id="contact-us">Contact Us</li></a>
         </ul>
     </div>
     <video autoplay muted loop id="myVideo"
@@ -35,7 +42,6 @@
     </video>
     <nav class="navbar" id="navbar">
         <i class="bi bi-list" id="menu-bar"></i>
-        <i class="bi bi-x-lg" id="menu-hide"></i>
         <h1 id="nav-title">Draconian pizza store</h1>
         <div class="nav-brand">
             <img src="https://img.icons8.com/ios/452/d.png" alt="logo" class="navbar-brand brand-auto" id="navbar-D">
@@ -249,7 +255,7 @@
         </div>
         <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid menu-bg" id="menu-bg">
     </section>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="footer-info">
             <div class="footer-hrs">
                 <h4 id="business-hrs">Business Hours</h4>

@@ -68,6 +68,7 @@ $(function () {
         $("#menu-hide").fadeIn();
         $(".navbar-brand").removeClass("brand-auto");
         $(".navbar-brand").addClass("brand-menu");
+        $(".body-overlay").fadeIn();
     })
 
     $("#menu-hide").click(function(){
@@ -76,6 +77,16 @@ $(function () {
         $("#menu-hide").fadeOut();
         $(".navbar-brand").removeClass("brand-menu");
         $(".navbar-brand").addClass("brand-auto");
+        $(".body-overlay").fadeOut();
+    })
+
+    $("#nav-menu-links li").click(function(){
+        $(".nav-menu").fadeOut();
+        $("#menu-bar").fadeIn();
+        $("#menu-hide").fadeOut();
+        $(".body-overlay").fadeOut();
+        $(".navbar-brand").removeClass("brand-menu");
+        $(".navbar-brand").addClass("brand-left");
     })
 
     // proceed to checkout
