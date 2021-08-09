@@ -4,13 +4,13 @@ html {
 
 * {
     box-sizing: border-box;
+    font-family: 'DecoTech';
 }
 
 body {
     height: auto !important;
     font-family: 'DecoTech';
     letter-spacing: 0.1em;
-    -webkit-font-smoothing: antialiased;
 }
 
 .body-overlay{
