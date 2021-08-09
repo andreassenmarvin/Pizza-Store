@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Store</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="http://fonts.cdnfonts.com/css/decotech" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
@@ -22,18 +22,10 @@
         </div>
         <ul id="nav-menu-links">
             <i class="bi bi-x-lg" id="menu-hide"></i>
-            <a href="index.html">
-                <li id="home">Home</li>
-            </a>
-            <a href="#aboutus">
-                <li id="about">About</li>
-            </a>
-            <a href="#menu">
-                <li id="our-menu">Our Services</li>
-            </a>
-            <a href="#footer">
-                <li id="contact-us">Contact Us</li>
-            </a>
+            <a href="index.html"><li id="home">Home</li></a>
+            <a href="#aboutus"><li id="about">About</li></a>
+            <a href="#menu"><li id="our-menu">Our Services</li></a>
+            <a href="#footer"><li id="contact-us">Contact Us</li></a>
         </ul>
     </div>
     <video autoplay muted loop id="myVideo"
@@ -231,16 +223,13 @@
             <a href="#cart-checkout"><button type="button" class="btn-default" id="checkout-btn">Proceed to
                     checkout</button></a>
             <p id="select-error">Kindly select your desired pizza and crust</p>
+            <form class="checkout-form">
             <div class="cart" id="cart-checkout">
                 <h3 id="cart-head">Checkout here</h3>
                 <div id="your-order">
                     <h4 id="order-size">You have ordered a:</h4>
                     <h4 id="order-crust">With:</h4>
                     <h4 id="order-toppings">and:</h4>
-                </div>
-                <div class="cart-btns">
-                    <button type="button" id="confirm-order">Confirm</button>
-                    <button type="button" id="cancel-order">Cancel</button>
                 </div>
                 <div class="delivery">
                     <p>Would you like us to deliver your order at an additional fee of Ksh250?</p>
@@ -260,6 +249,7 @@
                 </div>
                 <input type="submit" value="Proceed" id="submit-order">
             </div>
+            </form>
         </div>
         <img src="Assets/menu-bg.jpg" alt="restaurant" class="img-fluid menu-bg" id="menu-bg">
     </section>

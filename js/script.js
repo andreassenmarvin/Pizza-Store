@@ -155,7 +155,8 @@ $(function () {
 
 
         // Proceed button
-        $("#submit-order").click(function () {
+        $("#submit-order").click(function (event) {
+            event.preventDefault();
             $("#total-cost").append(checkoutTotal);
         });
 

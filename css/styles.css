@@ -7,18 +7,18 @@ html {
 }
 
 body {
-    width: 100%;
     height: auto !important;
-    font-family: 'Crimson Text',serif;
+    font-family: 'DecoTech';
     letter-spacing: 0.1em;
+    -webkit-font-smoothing: antialiased;
 }
 
-.body-overlay {
+.body-overlay{
     display: none;
-    position: absolute;
+    position: fixed;
     background: rgba(17, 17, 17, 0.6);
     width: 100%;
-    height: 3655px;
+    height: 100%;
     z-index: 4;
 }
 
@@ -36,18 +36,18 @@ body {
 
 #menu-bar {
     position: absolute;
-    font-size: 35px;
+    font-size: 40px;
     z-index: 1;
 }
 
-#menu-hide {
+#menu-hide{
     position: absolute;
     display: none;
     margin-left: 220px;
-    font-size: 25px;
+    font-size: 30px;
 }
 
-.nav-menu {
+.nav-menu{
     display: none;
     position: fixed;
     width: 20%;
@@ -56,17 +56,17 @@ body {
     z-index: 4;
 }
 
-#nav-menu-links {
+#nav-menu-links{
     display: flex;
     flex-direction: column;
     list-style: none;
     margin-top: 10px;
 }
 
-#nav-menu-links li {
+#nav-menu-links li{
     margin: 70px;
     margin-top: 90px;
-    font-size: 18px;
+    font-size: 24px;
     color: black;
 }
 
@@ -82,7 +82,7 @@ body {
     margin-left: 130px;
 }
 
-.brand-menu {
+.brand-menu{
     margin-left: 10px;
 }
 
@@ -107,7 +107,7 @@ body {
 
 #c-number {
     padding: 40px;
-    font-size: 15px;
+    font-size: 21px;
     letter-spacing: 0.1em;
     margin-top: 15px;
 }
@@ -159,7 +159,7 @@ i {
     color: black;
     margin: auto;
     text-transform: uppercase;
-    font-size: 40px;
+    font-size: 55px;
     font-weight: bold;
     display: none;
 }
@@ -173,20 +173,20 @@ i {
 }
 
 #head-title {
-    font-size: 60px;
+    font-size: 90px;
     letter-spacing: 0.15em;
 }
 
 #head-t {
     margin-top: 50px;
-    font-size: 40px;
+    font-size: 60px;
     text-transform: capitalize;
     letter-spacing: 0.2em;
 }
 
 #head-p {
     margin: auto;
-    font-size: 20px;
+    font-size: 25px;
     text-align: center;
     width: 500px;
 }
@@ -194,7 +194,7 @@ i {
 #order-now {
     margin: auto;
     margin-top: 20px;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     width: 500px;
 }
@@ -208,7 +208,7 @@ i {
     border-radius: 0;
     width: 200px;
     height: 60px;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: 0.18em;
     background-color: #e12301;
@@ -246,11 +246,11 @@ i {
 }
 
 #about-h {
-    font-size: 40px;
+    font-size: 45px;
 }
 
 #about-p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 
@@ -271,7 +271,7 @@ i {
 #carousel-tag {
     width: 50%;
     position: absolute;
-    font-size: 30px;
+    font-size: 45px;
     letter-spacing: 0.06em;
     z-index: 1;
     color: white;
@@ -380,7 +380,7 @@ i {
     object-position: center;
 }
 
-.menu-cart-bg {
+.menu-cart-bg{
     position: relative;
     width: 100%;
     height: 2000px;
@@ -388,7 +388,7 @@ i {
     object-position: center;
 }
 
-.menu-cart-overlay {
+.menu-cart-overlay{
     position: absolute;
     width: 100%;
     height: 2000px;
@@ -410,7 +410,7 @@ i {
     color: white;
     margin-top: 10px;
     margin-left: 610px;
-    font-size: 23px;
+    font-size: 32px;
 }
 
 .order-pizza {
@@ -457,7 +457,7 @@ i {
 
 #small-p-tag {
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     letter-spacing: 0.13em;
     margin-top: -45px;
     text-align: center;
@@ -466,7 +466,7 @@ i {
 
 #small-price {
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
 }
 
@@ -517,7 +517,7 @@ i {
     margin-left: -18px;
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     z-index: 1;
     text-transform: capitalize;
 }
@@ -525,7 +525,7 @@ i {
 #medium-price {
     position: absolute;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     z-index: 1;
     margin: 20px;
@@ -580,7 +580,7 @@ i {
     width: 300px;
     margin-left: -18px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     z-index: 1;
     text-transform: capitalize;
 }
@@ -589,14 +589,14 @@ i {
 #large-price {
     position: absolute;
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     text-align: center;
     z-index: 1;
     margin: 20px;
     margin-top: 48px;
 }
 
-#menu-line1 {
+#menu-line1{
     position: absolute;
     width: 97%;
     height: 1px;
@@ -606,25 +606,25 @@ i {
     margin-left: 23px;
 }
 
-.crusts {
+.crusts{
     position: absolute;
     display: flex;
     z-index: 1;
     margin-top: 450px;
 }
 
-#crusts-head {
+#crusts-head{
     position: absolute;
     width: 400px;
     color: white;
-    font-size: 22px;
+    font-size: 32px;
     z-index: 1;
     margin-top: -50px;
     margin-left: 565px;
     text-transform: capitalize;
 }
 
-.stuffed-crust {
+.stuffed-crust{
     position: relative;
     display: flex;
     justify-content: center;
@@ -639,11 +639,11 @@ i {
     margin-left: 140px;
 }
 
-#stuffed-crust {
+#stuffed-crust{
     position: absolute;
 }
 
-#stuffed-input {
+#stuffed-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -652,41 +652,41 @@ i {
     margin-left: 7px;
 }
 
-#stuffed-img {
+#stuffed-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#stuffed-img:hover {
+#stuffed-img:hover{
     transform: scale(1.1);
 }
 
-#stuffed-t-price {
+#stuffed-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#stuffed-tag {
+#stuffed-tag{
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#stuffed-price {
+#stuffed-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-.glutten-crust {
+.glutten-crust{
     position: relative;
     display: flex;
     justify-content: center;
@@ -701,11 +701,11 @@ i {
     margin-left: 165px;
 }
 
-#glutten-crust {
+#glutten-crust{
     position: absolute;
 }
 
-#glutten-input {
+#glutten-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -714,41 +714,41 @@ i {
     margin-left: 5px;
 }
 
-#glutten-img {
+#glutten-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#glutten-img:hover {
+#glutten-img:hover{
     transform: scale(1.1);
 }
 
-#glutten-t-price {
+#glutten-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#glutten-tag {
+#glutten-tag{
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#glutten-price {
+#glutten-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-.crispy-crust {
+.crispy-crust{
     position: relative;
     display: flex;
     justify-content: center;
@@ -763,11 +763,11 @@ i {
     margin-left: 165px;
 }
 
-#crispy-crust {
+#crispy-crust{
     position: absolute;
 }
 
-#crispy-input {
+#crispy-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -776,41 +776,41 @@ i {
     margin-left: 5px;
 }
 
-#crispy-img {
+#crispy-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#crispy-img:hover {
+#crispy-img:hover{
     transform: scale(1.1);
 }
 
-#crispy-t-price {
+#crispy-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#crispy-tag {
+#crispy-tag{
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#crispy-price {
+#crispy-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-#menu-line2 {
+#menu-line2{
     position: absolute;
     width: 97%;
     height: 1px;
@@ -820,25 +820,25 @@ i {
     margin-left: 23px;
 }
 
-.toppings {
+.toppings{
     position: absolute;
     display: flex;
     z-index: 1;
     margin-top: 870px;
 }
 
-#toppings-head {
+#toppings-head{
     position: absolute;
     width: 400px;
     color: white;
-    font-size: 22px;
+    font-size: 32px;
     z-index: 1;
     margin-top: -55px;
     margin-left: 600px;
     text-transform: capitalize;
 }
 
-.pepperoni {
+.pepperoni{
     position: relative;
     display: flex;
     justify-content: center;
@@ -853,11 +853,11 @@ i {
     margin-left: 140px;
 }
 
-#pepperoni {
+#pepperoni{
     position: absolute;
 }
 
-#pepperoni-input {
+#pepperoni-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -866,41 +866,41 @@ i {
     margin-left: 5px;
 }
 
-#pepperoni-img {
+#pepperoni-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#pepperoni-img:hover {
+#pepperoni-img:hover{
     transform: scale(1.1);
 }
 
-#pepperoni-t-price {
+#pepperoni-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#pepperoni-tag {
+#pepperoni-tag{
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#pepperoni-price {
+#pepperoni-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-.mushroom {
+.mushroom{
     position: relative;
     display: flex;
     justify-content: center;
@@ -915,11 +915,11 @@ i {
     margin-left: 165px;
 }
 
-#mushroom {
+#mushroom{
     position: absolute;
 }
 
-#mushroom-input {
+#mushroom-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -928,41 +928,41 @@ i {
     margin-left: 5px;
 }
 
-#mushroom-img {
+#mushroom-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#mushroom-img:hover {
+#mushroom-img:hover{
     transform: scale(1.1);
 }
 
-#mushroom-t-price {
+#mushroom-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#mushroom-tag {
+#mushroom-tag{
     width: 300px;
     color: white;
-    font-size: 28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#mushroom-price {
+#mushroom-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-.bacon {
+.bacon{
     position: relative;
     display: flex;
     justify-content: center;
@@ -977,11 +977,11 @@ i {
     margin-left: 165px;
 }
 
-#bacon {
+#bacon{
     position: absolute;
 }
 
-#bacon-input {
+#bacon-input{
     position: absolute;
     transform: scale(1.8);
     z-index: 1;
@@ -990,51 +990,51 @@ i {
     margin-left: 5px;
 }
 
-#bacon-img {
+#bacon-img{
     width: 235px;
     height: 170px;
     transition: all ease-in-out .4s;
 }
 
-#bacon-img:hover {
+#bacon-img:hover{
     transform: scale(1.1);
 }
 
-#bacon-t-price {
+#bacon-t-price{
     position: absolute;
     color: white;
     text-align: center;
     margin-left: -30px;
     z-index: 1;
-
+    
 }
 
-#bacon-tag {
+#bacon-tag{
     width: 300px;
     color: white;
-    font-size:28px;
+    font-size: 35px;
     margin-top: 30px;
     z-index: 1;
     text-transform: capitalize;
 }
 
-#bacon-price {
+#bacon-price{
     color: white;
-    font-size: 18px;
+    font-size: 25px;
     z-index: 1;
 }
 
-#select-error {
+#select-error{
     display: none;
     position: absolute;
     width: 340px;
     color: #e12301;
-    font-size: 15px;
+    font-size: 23px;
     margin-top: 10px;
     margin-left: 400px;
 }
 
-#menu-line3 {
+#menu-line3{
     position: absolute;
     width: 97%;
     height: 1px;
@@ -1044,7 +1044,7 @@ i {
     margin-left: 23px;
 }
 
-.checkout {
+.checkout{
     position: absolute;
     display: flex;
     margin-top: 1250px;
@@ -1052,7 +1052,7 @@ i {
     z-index: 1;
 }
 
-#checkout-btn {
+#checkout-btn{
     position: absolute;
     width: 180px;
     height: 60px;
@@ -1060,61 +1060,61 @@ i {
     color: white;
     border: 1px solid white;
     border-radius: 0;
-    font-size: 17px;
+    font-size: 26px;
     transition: all ease-in-out .4s;
     outline: none
 }
 
-#checkout-btn:hover {
+#checkout-btn:hover{
     background-color: #e12301;
     border: 1px solid transparent
 }
 
-.cart {
+.cart{
     display: none;
     position: absolute;
     margin-left: 350px;
     width: 450px;
-    height: 800px;
-    border: 1px solid white;
+    height: 660px;
+    border:1px solid white;   
     background: white;
 }
 
-#cart-head {
-    font-size: 25px;
+#cart-head{
+    font-size: 35px;
     color: black;
     text-align: center;
     margin-top: 10px;
 }
 
-#your-order {
+#your-order{
     color: black;
     margin: 20px;
 }
 
-#order-size {
-    font-size: 20px;
+#order-size{
+    font-size: 25px;
     padding: 20px;
 }
 
-#order-crust {
-    font-size: 20px;
+#order-crust{
+    font-size: 25px;
     padding: 20px;
 }
 
-#order-toppings {
-    font-size: 20px;
+#order-toppings{
+    font-size: 25px;
     padding: 20px;
 }
 
-.cart-btns {
+.cart-btns{
     margin-left: 20px;
 }
 
-#confirm-order {
+#confirm-order{
     width: 110px;
     height: 40px;
-    font-size: 14px;
+    font-size: 20px;
     margin: 20px;
     background: white;
     border: 1px solid black;
@@ -1122,54 +1122,54 @@ i {
     transition: all ease-in-out .4s;
 }
 
-#confirm-order:hover {
+#confirm-order:hover{
     background: black;
     color: white;
     border: 1px solid transparent;
 }
 
-#cancel-order {
+#cancel-order{
     width: 110px;
     height: 40px;
-    font-size: 14px;
+    font-size: 20px;
     background: #e12301;
     color: white;
     border: 1px solid transparent;
     transition: all ease-in-out .4s;
 }
 
-#cancel-order:hover {
+#cancel-order:hover{
     background: transparent;
     border: 1px solid black;
     color: black;
 }
 
-.delivery {
+.delivery{
     margin: 20px 0px 0px 40px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
-.deliver-inputs {
+.deliver-inputs{
     margin-left: 40px;
 }
 
-.deliver-inputs input[type="radio"] {
+.deliver-inputs input[type = "radio"]{
     cursor: pointer;
 }
 
-.deliver-inputs label {
-    font-size: 11px;
+.deliver-inputs label{
+    font-size: 22px;
 }
 
-.total-cost {
+.total-cost{
     margin: 5px 0px 0px 40px;
-    font-size: 16px;
+    font-size: 25px;
 }
 
-#submit-order {
+#submit-order{
     width: 110px;
     height: 40px;
-    font-size: 14px;
+    font-size: 20px;
     background: black;
     display: block;
     margin: auto;
@@ -1179,13 +1179,14 @@ i {
     transition: all ease-in-out .4s;
 }
 
-#submit-order:hover {
+#submit-order:hover{
     background: white;
     color: black;
     border: 1px solid black;
 }
 
-.footer {
+
+.footer{
     position: relative;
     display: flex;
     justify-content: center;
@@ -1193,101 +1194,100 @@ i {
     height: 270px;
     background: white;
     color: black;
-    z-index: 3;
 }
 
-.footer-info {
+.footer-info{
     position: absolute;
     display: flex;
     margin: 40px;
     border-bottom: 1px solid black;
 }
 
-#business-hrs {
-    font-size: 23px;
+#business-hrs{
+    font-size: 35px;
 }
 
-.footer-hrs {
+.footer-hrs{
     display: flex;
     border-right: 1px solid black;
-    padding-right: 20px;
+    padding-right: 20px;   
 }
 
-.footer-list {
+.footer-list{
     list-style: none;
     margin-left: 30px;
 }
 
-.footer-list li {
-    font-size: 15px;
+.footer-list li{
+    font-size: 25px;
 }
 
-#footer-call {
+#footer-call{
     margin-left: 80px;
     padding-right: 80px;
-    border-right: 1px solid black;
+    border-right: 1px solid black;   
 }
 
-#footer-call h4 {
-    font-size: 23px;
+#footer-call h4{
+    font-size: 35px;
     text-align: center;
 }
 
-#footer-call a {
-    font-size: 15px;
+#footer-call a{
+    font-size: 25px;
     color: black;
 }
 
-#footer-contact {
+#footer-contact{
     margin-left: 80px;
     padding-right: 80px;
-    border-right: 1px solid black;
+    border-right: 1px solid black;   
 }
 
-#footer-contact h4 {
-    font-size: 23px;
+#footer-contact h4{
+    font-size: 35px;
     text-align: center;
 }
 
-#footer-contact a {
-    font-size: 15px;
+#footer-contact a{
+    font-size: 25px;
     color: black;
 }
 
-i {
+i{
     cursor: pointer;
 }
 
-#footer-follow {
+#footer-follow{
     margin-left: 50px;
     padding-right: 30px;
     text-align: center;
 }
 
-.footer-icons {
+.footer-icons{
     margin-left: -30px;
 }
 
-#footer-follow h4 {
-    font-size: 23px;
+#footer-follow h4{
+    font-size: 35px;
 }
 
-#footer-follow a {
-    font-size: 1px;
+#footer-follow a{
+    font-size: 18px;
     color: black;
 }
 
-#footer-copy {
+#footer-copy{
     position: relative;
     display: block;
     margin: auto;
     text-align: center;
     width: 280px;
-    font-size: 13px;
+    font-size: 20px;
     top: 100px;
 }
 
-.map iframe {
+.map iframe{
     position: absolute;
     top: 0;
     right: 0;
