@@ -4,12 +4,11 @@ html {
 
 * {
     box-sizing: border-box;
-    font-family: 'DecoTech';
 }
 
 body {
     height: auto !important;
-    font-family: 'DecoTech';
+    font-family: 'Economica', sans-serif;
     letter-spacing: 0.1em;
 }
 
@@ -410,7 +409,7 @@ i {
     color: white;
     margin-top: 10px;
     margin-left: 610px;
-    font-size: 32px;
+    font-size: 27px;
 }
 
 .order-pizza {
@@ -617,10 +616,10 @@ i {
     position: absolute;
     width: 400px;
     color: white;
-    font-size: 32px;
+    font-size: 27px;
     z-index: 1;
     margin-top: -50px;
-    margin-left: 565px;
+    margin-left: 580px;
     text-transform: capitalize;
 }
 
@@ -1239,7 +1238,7 @@ i {
 }
 
 #footer-contact{
-    margin-left: 80px;
+    margin-left: 70px;
     padding-right: 80px;
     border-right: 1px solid black;   
 }
@@ -1265,7 +1264,9 @@ i{
 }
 
 .footer-icons{
-    margin-left: -30px;
+    margin-left: -25px;
+    font-size:13px;
+    display: flex;
 }
 
 #footer-follow h4{
