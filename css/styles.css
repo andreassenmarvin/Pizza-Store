@@ -8,6 +8,7 @@ html {
 
 body {
     height: auto !important;
+    max-width: 100%;
     font-family: 'Economica', sans-serif;
     letter-spacing: 0.1em;
 }
